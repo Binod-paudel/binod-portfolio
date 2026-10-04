@@ -4,6 +4,8 @@ import logger from "./middlewares/logger.js";
 import notFoundHandler from "./middlewares/notFound.middleware.js";
 import errorHandler from "./middlewares/errorHandler.middleware.js";
 
+import authRouter from "./routes/auth.router.js";
+
 const app = express();
 
 
@@ -12,6 +14,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(logger);
+
+app.use("/api/v1/auth", authRouter);
 
 
 //error handler
