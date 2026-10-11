@@ -6,6 +6,7 @@ import errorHandler from "./middlewares/errorHandler.middleware.js";
 
 import authRouter from "./routes/auth.router.js";
 import profileRouter from "./routes/profile.router.js";
+import skillRouter from "./routes/skill.router.js";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(logger);
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/profile", profileRouter);
+app.use("/api/v1/skills", skillRouter);
 
 
 //error handler
