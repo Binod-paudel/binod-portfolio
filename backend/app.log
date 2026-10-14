@@ -28,3 +28,8 @@
 [2026-10-12T4:41:48]::POST /api/v1/auth/login ::1 200 246ms
 [2026-10-12T4:43:29]::POST /api/v1/profile ::1 404 5ms
 [2026-10-12T4:43:38]::GET /api/v1/profile ::1 200 55ms
+[2026-10-14T20:27:51]::POST /api/v1/auth/login ::1 200 426ms
+[2026-10-14T20:28:59]::POST /api/v1/message ::1 404 14ms
+[2026-10-14T20:30:15]::POST /api/v1/message ::1 404 8ms
+[2026-10-14T20:31:55]::POST /api/v1/messages ::1 201 1399ms
+[2026-10-14T20:33:15]::PATCH /api/v1/messages/6acf95e02fb944f409a391e0/read ::1 200 86ms

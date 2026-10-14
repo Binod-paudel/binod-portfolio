@@ -9,6 +9,7 @@ import authRouter from "./routes/auth.router.js";
 import profileRouter from "./routes/profile.router.js";
 import skillRouter from "./routes/skill.router.js";
 import messageRouter from "./routes/message.router.js";
+import projectRouter from "./routes/project.router.js";
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/profile", profileRouter);
 app.use("/api/v1/skills", skillRouter);
 app.use("/api/v1/messages", messageRouter);
+app.use("/api/v1/projects", projectRouter);
 
 
 //error handler
